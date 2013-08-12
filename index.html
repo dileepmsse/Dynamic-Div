@@ -7,27 +7,19 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
 <script>
-$(function() {  
-$('.latestCards').prepend('<div> new div </div>');
-if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    } else {
-        onDeviceReady();
-  	}
-  
-	});
-function onDeviceReady() {
-//var cardsNumber = 0;
-//if(getRandomInt())
-$('.latestCards').prepend(<div> new div </div>');
-}
-function getRandomInt(min, max) { 
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+function test(){
+for(var i = 0; i<=4; i++){
+var htmltext = '<div class = "testDiv"></div>'
+$('latestCards').prepend(htmltext);
+jQuery("<img/>").prependTo(".latestCards").attr({
+   src: 'plug-in_edited.png',
+   alt: 'Sorry image not found',
+   height: '60'
+});}}
 </script>
 </head>
 <body>
-<div> Hi did u get what you want?</div>
-<div class='latestCards'> Add to me </div>	
+<button onclick="test()">Click to add new div with image</button>
+<div class='latestCards' class = '#latestCardsID'> <p>hi<p></div>
 </body>
 </html>
