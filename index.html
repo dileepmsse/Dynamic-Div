@@ -15,7 +15,8 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
 function onDeviceReady() {
 //var cardsNumber = 0;
 //if(getRandomInt())
-$('latestCards').prepend($('<div> new div </div>'));
+$('.latestCards').prepend($('<div> new div </div>'));
+$('#latestCards').prepend($('<div> new div </div>'));
 }
 function getRandomInt(min, max) { 
   return Math.floor(Math.random() * (max - min + 1)) + min;
