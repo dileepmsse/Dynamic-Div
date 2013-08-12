@@ -6,13 +6,13 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script>
 $(function() {  
+$('.latestCards').prepend('<div> new div </div>');
 if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
         document.addEventListener("deviceready", onDeviceReady, false);
     } else {
         onDeviceReady();
   	}
-  $('.latestCards').prepend('<div> new div </div>');
-
+  
 	});
 function onDeviceReady() {
 //var cardsNumber = 0;
@@ -26,6 +26,6 @@ function getRandomInt(min, max) {
 </head>
 <body>
 <div> Hi did u get what you want?</div>
-<div class='latestCards'> </div>	
+<div class='latestCards'> Add to me </div>	
 </body>
 </html>
